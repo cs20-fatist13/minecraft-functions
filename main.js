@@ -64,5 +64,26 @@ function fishBtnClicked() {
       numPufferSpan.innerHTML = numPuffer;
       resultImg.src = 'img/Pufferfish.png';
     }
+  } else {
+    // villager
+    let randNum = Math.random();
+
+    if (randNum < 0.3) {
+      numCod++;
+      imgResultEl.src = "img/Raw-Cod.png";
+      numCod.innerHTML = numCod;
+    } else if (randNum < 0.5) {
+      numSalmon++;
+      imgResultEl.src = "img/Raw-Salmon.png";
+      numSalmon.innerHTML = numSalmon;
+    } else if (randNum < 0.8) {
+      numTropical++;
+      imgResultEl.src = "img/Tropical-Fish.png";
+      numTropical.innerHTML = numTropical;
+    } else {
+      numPuffer++;
+      imgResultEl.src = "img/Pufferfish.png";
+      numPuffer.innerHTML = numPuffer;
+    }
   }
 }
