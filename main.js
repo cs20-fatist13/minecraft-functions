@@ -41,7 +41,7 @@ function catchFish(codProb, salmonProb, tropicalProb, pufferProb) {
     numSalmon++;
     numSalmonSpan.innerHTML = numSalmon;
   resultImg.src = 'img/Raw-Salmon.png';
-  } else if (tropicalProb > randNum) {
+  } else if (tropicalProb < randNum) {
     numTropical++;
     numTropicalSpan.innerHTML = numTropical;
     resultImg.src = 'img/Tropical-Fish.png';
